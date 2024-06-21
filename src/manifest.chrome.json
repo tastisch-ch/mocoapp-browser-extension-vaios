@@ -2,7 +2,7 @@
   "name": "MOCO Zeiterfassung vaios",
   "short_name": "MOCO vaios",
   "description": "MOCO Zeiterfassung Plugin",
-  "manifest_version": 4,
+  "manifest_version": 3,
   "icons": {
     "16": "src/images/moco-32x32.png",
     "32": "src/images/moco-32x32.png",
