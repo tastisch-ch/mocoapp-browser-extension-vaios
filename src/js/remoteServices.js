@@ -25,11 +25,25 @@ export default {
     host: "https://app.clickup.com",
     urlPatterns: [":host:/t/:id", ":host:/t/:id/:customId", ":host:/:space/v/l/f/:folder"],
     description: (document, service, { id, customId }) => {
-      const title =
-        // ClickUp Version 3
-        document.querySelector(".cu-task-title__overlay")?.textContent?.trim() ||
-        // ClickUp Version <3
-        document.querySelector(".task-name__overlay")?.textContent?.trim()
+      
+        /* vaios custom title selector */
+        var textArray = [];
+        var stop = false;
+            
+        var elements = document.querySelectorAll('.cu-task-recent-item__name-text');
+        elements.forEach(element => {
+            if (!stop) {
+                var text = element.textContent.trim();
+                textArray.push(text);
+                if (element.closest('.cu-tree-item__row.cu-tree-item__row_current')) {
+                    stop = true;
+                }
+            }
+        });
+        const title = textArray.join(' > ');
+        /*// ClickUp Version 3
+        document.querySelector(".cu-task-title__overlay")?.textContent?.trim() */
+        
       return `#${customId || id} ${title || ""}`.trim()
     },
     projectId: (document) => {
