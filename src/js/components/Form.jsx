@@ -25,10 +25,6 @@ class Form extends Component {
     onSubmit: PropTypes.func.isRequired,
   }
 
-  static defaultProps = {
-    inline: true,
-  }
-
   isValid() {
     const { changeset } = this.props
     return (
@@ -119,6 +115,7 @@ class Form extends Component {
             value={changeset.hours}
             placeholder="0:00"
             autoComplete="off"
+            tabIndex={0}
             autoFocus
           />
           {errors.hours ? <div className="form-error">{errors.hours.join("; ")}</div> : null}

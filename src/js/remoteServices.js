@@ -107,6 +107,10 @@ export default {
       ":host:/jira/software/c/projects/:projectId/boards/:board/backlog",
       ":host:/jira/software/c/projects/:projectId/boards/:board/roadmap",
       ":host:/jira/software/c/projects/:projectId/boards/:board/timeline",
+      ":host:/jira/core/projects/:projectId/board",
+      ":host:/jira/core/projects/:projectId/issues",
+      ":host:/jira/core/projects/:projectId/list",
+      ":host:/jira/core/projects/:projectId/timeline",
     ],
     queryParams: {
       id: "selectedIssue",
@@ -117,7 +121,8 @@ export default {
         document
           .querySelector('[data-testid="issue.views.issue-base.foundation.summary.heading"]')
           ?.textContent?.trim() ||
-        document.querySelector(".ghx-selected .ghx-summary")?.textContent?.trim()
+        document.querySelector(".ghx-selected .ghx-summary")?.textContent?.trim() ||
+        document.querySelector('[id="summary-val"]')?.innerText?.trim()
       return `#${id} ${title || ""}`
     },
     projectId: (document, service, { projectId }) => {
@@ -166,10 +171,10 @@ export default {
     name: "trello",
     host: "https://trello.com",
     urlPatterns: [":host:/c/:id/:title"],
-    description: (document, service, { title }) =>
-      document.querySelector("#js-dialog-title")?.textContent?.trim() || title,
+    description: (document, _service, { title }) =>
+      document.querySelector("#card-back-name")?.textContent?.trim() || title,
     projectId: (document) =>
-      projectIdentifierBySelector("#js-dialog-title")(document) ||
+      projectIdentifierBySelector("#card-back-name")(document) ||
       projectIdentifierBySelector("[data-testid='board-name-display']")(document),
     allowHostOverride: false,
   },

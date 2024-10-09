@@ -5,6 +5,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.7.4] – 2024-10-07
+
+### Fixed
+
+- Fix display of popup in Clickup
+
+## [2.7.3] – 2024-10-02
+
+### Fixed
+
+- Make sure focus-trap is created after form mounted
+
+## [2.7.2] – 2024-10-02
+
+### Fixed
+
+- Popup only mounts for the first time
+
+## [2.7.1] – 2024-10-02
+
+### Fixed
+
+- Unable to focus popup due to focus trap in Trello
+
+### Changed
+
+- Add Jira issue summary to description ([#881](https://github.com/hundertzehn/mocoapp-browser-extension/pull/881)) – contribution by [jj117171](https://github.com/jj117171)
+
+## [2.7.0] – 2024-08-12
+
+### Added
+
+- Support for Superchat ([#866](https://github.com/hundertzehn/mocoapp-browser-extension/pull/866)) – contribution by [Niiiklaas](https://github.com/Niiiklaas)
+
+### Changed
+
+- Update urlPatterns list for jira - add jira core project urls ([#861](https://github.com/hundertzehn/mocoapp-browser-extension/pull/861)) – contribution by [Der-Alex](https://github.com/Der-Alex))
+
 ## [2.6.2] - 2024-01-29
 
 ### Changed
@@ -21,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Support new service Teamwork ([#764](https://github.com/hundertzehn/mocoapp-browser-extension/pull/764)) – community supported, contribution by Niiiklaas: https://github.com/Niiiklaas)
+- Support new service Teamwork ([#764](https://github.com/hundertzehn/mocoapp-browser-extension/pull/764)) – community supported, contribution by [Niiiklaas](https://github.com/Niiiklaas))
 
 ## [2.5.4] - 2023-11-15
 
@@ -104,7 +142,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Support awork ([PR 734](https://github.com/hundertzehn/mocoapp-browser-extension/pull/734) – community supported, contribution by Vitor Durante: https://github.com/vdurante)
+- Support awork ([PR 734](https://github.com/hundertzehn/mocoapp-browser-extension/pull/734) – community supported, contribution by [Vitor Durante](https://github.com/vdurante))
 
 ## [2.3.1] - 2023-05-23
 
@@ -115,13 +153,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- projectId service property to openproject ([PR 686](https://github.com/hundertzehn/mocoapp-browser-extension/pull/686) – community supported, contribution by Bernhard Krop: https://github.com/Bernhard-Krop)
+- projectId service property to openproject ([PR 686](https://github.com/hundertzehn/mocoapp-browser-extension/pull/686) – community supported, contribution by [Bernhard Krop](https://github.com/Bernhard-Krop))
 
 ## [2.3.0] - 2023-05-02
 
 ### Added
 
-- Support OpenProject ([PR 680](https://github.com/hundertzehn/mocoapp-browser-extension/pull/680) – community supported, contribution by Bernhard Krop: https://github.com/Bernhard-Krop)
+- Support OpenProject ([PR 680](https://github.com/hundertzehn/mocoapp-browser-extension/pull/680) – community supported, contribution by [Bernhard Krop](https://github.com/Bernhard-Krop))
 
 ### Changed
 
@@ -148,13 +186,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Support Basecamp 3 cards ([PR 590](https://github.com/hundertzehn/mocoapp-browser-extension/pull/590) – community supported, contribution by Florian Jahn: https://github.com/fjahn)
+- Support Basecamp 3 cards ([PR 590](https://github.com/hundertzehn/mocoapp-browser-extension/pull/590) – community supported, contribution by [Florian Jahn](https://github.com/fjahn))
 
 ## [2.0.1] - 2022-10-08
 
 ### Added
 
-- Support Basecamp 3 cards ([PR 590](https://github.com/hundertzehn/mocoapp-browser-extension/pull/590) – community supported, contribution by Florian Jahn: https://github.com/fjahn)
+- Support Basecamp 3 cards ([PR 590](https://github.com/hundertzehn/mocoapp-browser-extension/pull/590) – community supported, contribution by [Florian Jahn](https://github.com/fjahn))
 
 ### Changed
 
@@ -264,13 +302,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Improvments to basecamp3: (community supported, contribution by Florian Jahn: https://github.com/fjahn)
+- Improvments to basecamp3: (community supported, contribution by [Florian Jahn](https://github.com/fjahn))
 
 ## [1.7.0] - 2021-11-22
 
 ### Added
 
-- basecamp3 service: (community supported, contribution by Florian Jahn: https://github.com/fjahn)
+- basecamp3 service: (community supported, contribution by [Florian Jahn](https://github.com/fjahn))
 
 ## [1.6.10] - 2021-08-31
 
@@ -329,7 +367,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add support for project folders in Gitlab (contribution by Adrian Görisch: https://github.com/adrian-goe)
+- Add support for project folders in Gitlab (contribution by [Adrian Görisch](https://github.com/adrian-goe))
 
 ## [1.6.1] - 2020-12-07
 
@@ -369,7 +407,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add support for Gitlab merge requests and issues: (community supported, contribution by Adrian Görisch: https://github.com/adrian-goe)
+- Add support for Gitlab merge requests and issues: (community supported, contribution by [Adrian Görisch](https://github.com/adrian-goe))
 
 ## [1.3.4] - 2020-01-09
 
